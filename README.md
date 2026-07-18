@@ -1,13 +1,7 @@
 # 🛒 Enterprise Sales Performance & Dynamic Target Analytics
 
 ## 📌 Project Overview
-This is an end-to-end Enterprise Business Intelligence and Data Engineering project analyzing sales performance, dynamic multi-region targets, and salesperson efficiency. The project simulates a high-scale corporate environment, handling complex transactional matrices directly connected to a relational database server.
-
-The project demonstrates a complete corporate data analytics lifecycle:
-1. **SQL & Data Engineering:** Schema extraction, entity relationship creation, primary/foreign key mapping, and granularity alignment.
-2. **Power Query (ETL):** Advanced data cleaning, custom transformations, and automated data loading.
-3. **Power BI & DAX:** Engineering a robust, high-performance relational model and delivering an executive-grade 7-page interactive dashboard with dynamic UX navigation.
-
+This is an end-to-end Enterprise Business Intelligence and Data Engineering project analyzing sales performance, dynamic multi-region targets, and salesperson efficiency. The project simulates a high-scale corporate 
 ---
 
 ## 🛠️ Data Architecture & Engineering Pipeline
