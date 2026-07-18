@@ -6,7 +6,7 @@ This is an end-to-end Enterprise Business Intelligence and Data Engineering proj
 The project demonstrates a complete corporate data analytics lifecycle:
 1. **SQL & Data Engineering:** Schema extraction, entity relationship creation, primary/foreign key mapping, and granularity alignment.
 2. **Power Query (ETL):** Advanced data cleaning, custom transformations, and automated data loading.
-3. **Power BI & DAX:** Engineering a robust, high-performance Star Schema relational model and delivering an executive-grade 7-page interactive dashboard with dynamic UX navigation.
+3. **Power BI & DAX:** Engineering a robust, high-performance relational model and delivering an executive-grade 7-page interactive dashboard with dynamic UX navigation.
 
 ---
 
@@ -25,15 +25,10 @@ The relational data streams were processed through Power Query to execute rigoro
 * **Custom Date Dimension:** Developed an enterprise calendar dimension supporting specialized corporate time-intelligence (Weeks, Active Days, Working Days, and fiscal periods)[cite: 1].
 * **Null & Exception Handling:** Implemented robust filtering logic to eliminate structural data gaps and maintain 100% data auditing precision.
 
-### 3. Data Modeling (Robust Star Schema)
-In Power BI, the optimized **Star Schema** architectural framework ensures swift filter propagation:
-* **Fact Tables:** `SalesData` (Core business transactions)[cite: 1] and `TargetT` (Dynamic budget definitions)[cite: 1].
-* **Dimension Tables:** `Calendar` (Time dimension)[cite: 1], `ItemsT` (Product details)[cite: 1], `SalesmanT` (Staff metadata)[cite: 1], `CustomerDBT` (Customer master data)[cite: 1], and `RouteT` (Logistics channels)[cite: 1].
-
 ---
 
 ## 📐 Analytics & DAX Calculations
-A centralized calculation layer was authored to compute critical corporate KPIs and period-over-period variance metrics using advanced **DAX**:
+A centralized measure repository was authored to compute critical corporate KPIs and period-over-period variance metrics using advanced **DAX**:
 
 * **Total YTD Sales:**
   $$Total\ YTD\ Sales = TOTALYTD(SUM(SalesData[ConvertedQty] * SalesData[UnitPrice]), 'Calendar'[Date])$$
@@ -56,36 +51,28 @@ A centralized calculation layer was authored to compute critical corporate KPIs 
 
 ## 📊 Dashboard & Report Preview
 
-### 1. Relational Data Model (Optimized Star Schema)
-![Data Model](capture_260718_013426.jpg)
+### 1. Interactive Navigation Hub (Home)
+![Home Screen](images/SalesData1_page-0001.jpg)
 
-### 2. Interactive Navigation Hub (Home)
-![Home Screen](SalesData1_page-0001.jpg)
+### 2. Executive KPIs Summary Page
+![KPIs Summary](images/SalesData1_page-0002.jpg)
 
-### 3. Executive KPIs Summary Page
-![KPIs Summary](SalesData1_page-0002.jpg)
+### 3. Enterprise Sales Overview Page
+![Sales Overview](images/SalesData1_page-0003.jpg)
 
-### 4. Enterprise Sales Overview Page
-![Sales Overview](SalesData1_page-0003.jpg)
+### 4. Branch Performance Matrix (Region vs. Target)
+![Region vs Target](images/SalesData1_page-0004.jpg)
 
-### 5. Branch Performance Matrix (Region vs. Target)
-![Region vs Target](SalesData1_page-0004.jpg)
+### 5. Salesforce Tracking Matrix (Salesman vs. Target)
+![Salesman vs Target](images/SalesData1_page-0005.jpg)
 
-### 6. Salesforce Tracking Matrix (Salesman vs. Target)
-![Salesman vs Target](SalesData1_page-0005.jpg)
+### 6. Customer Behavioral & Cohort Analysis
+![Customer Analysis](images/SalesData1_page-0006.jpg)
 
-### 7. Customer Behavioral & Cohort Analysis
-![Customer Analysis](SalesData1_page-0006.jpg)
-
-### 8. Granular Customer Sales Audit Report
-![Customer Sales Report](SalesData1_page-0007.jpg)
-
----
-
-## 📂 Download Project Files
-📥 [Download Power BI (.pbix) Source File](./Sales_Performance_Dashboard.pbix)
+### 7. Granular Customer Sales Audit Report
+![Customer Sales Report](images/SalesData1_page-0007.jpg)
 
 ---
 
 ## 🚀 Corporate Value
-This enterprise solution serves as a unified single source of truth for sales directors. By bridging the gap between structural database schema design and visual analytics, it empowers stakeholders to minimize audit times, track field performance instantaneously, and optimize sales targets dynamically.
+This enterprise solution serves as a unified single source of truth for sales directors. By bridging the gap between data engineering structures and visual analytics, it empowers stakeholders to minimize audit times, track field performance instantaneously, and optimize sales targets dynamically.
